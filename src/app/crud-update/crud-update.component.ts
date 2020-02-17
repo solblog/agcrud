@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FoodService } from '../services/food.service';
 
 @Component({
   selector: 'app-crud-update',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CrudUpdateComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api: FoodService) { }
 
   ngOnInit() {
   }
